@@ -1,0 +1,1000 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 3.5rem;
+    width: 100%;
+    height: 100%;
+}
+
+
+* {
+    /* font-family: 'IBM Plex Serif', serif; */
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+/* h1 {
+    
+    font-weight: 900;
+} */
+
+/* header and nav */
+/*  */
+/*  */
+
+header {
+    width: 100%;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #F5F5F5;
+    z-index: 1000;
+    margin: 0;
+    padding: 0;
+    background-color: #FFF;
+}
+
+header .btn {
+    width: 4rem;
+    color: black;
+    background-color: white;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 1rem;
+    background: transparent;
+    padding: 1rem;
+    z-index: 1000;
+    position: absolute;
+    right: -0.7rem;
+    top: -0.9rem;
+    border: 0;
+    margin-right: 10%;  
+}
+
+header h3 {
+    margin: 1rem;
+    font-weight: 700;
+    margin-left: 10%;
+}
+
+header .homebtn {
+    font-weight: 900;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+    background: transparent;
+    border: 0;
+    width: 9rem;
+}
+
+header a {
+    font-weight: 900;
+    margin-left: 4.5%;
+    display: flex;
+    
+    text-decoration: none;
+}
+
+
+nav {
+    position: fixed;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    transform: translateX(100%);
+    transition: transform 550ms ease-in-out;
+}
+
+nav ul {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    font-weight: 200;
+    font-size: 4.5rem;
+    text-decoration: none;
+    color: black;
+    opacity: 70%;
+    z-index: 1000;
+    
+}
+
+header #important {
+    z-index: 1000;
+}
+
+
+nav a:hover {
+    opacity: 100%;
+}
+
+.nav-open nav {
+    transform: translateX(0);
+}
+
+.nav-open .btn {
+    position: fixed;
+}
+
+/* image and text */
+/*  */
+/*  */
+
+.container-1 {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    /* flex-direction: column; */
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    line-height: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    top: 5rem;
+    z-index: 10;
+    margin: 0;
+    padding: 0;
+    /* background-color: #A149FA; */
+    
+}
+
+.intro-text {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    margin: 0 2rem;
+}
+
+.container-1 h1 {
+    /* color: white; */
+    /* font-size: 4.3rem; */
+    font-size: 4vw;
+    font-weight: 900;
+    letter-spacing: -1px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container-1 h4 {
+    /* color: white; */
+    /* font-size: 1.4rem; */
+    font-size: 1.9vw;
+    font-weight: 300;
+    opacity: 80%;
+}
+
+
+.container-1 a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-weight: 900;
+}
+
+.container-1 a h4 {
+    font-weight: 500;
+}
+
+.container-1 .img {
+    width: 25vw;
+    height: 25vw;
+    background-color: #A149FA;
+    border-radius: 300px;
+}
+
+
+/* about section */
+/*  */
+/*  */
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-top: 5rem;
+    width: 100%;
+    /* margin-left: 14%;
+    margin-right: 14%; */
+    /* line-height: 2rem; */
+    background-color: black;
+    padding: 10vh 0;
+    z-index: -1;
+    margin-top: 5rem;
+
+}
+
+
+.about h2 {
+    font-weight: 900;
+    font-size: 2.2rem;
+    color: white;
+}
+
+.about p {
+    z-index: 0;
+    color: lightgray;
+    /* opacity: 70%; */
+    font-size: 1.2rem;
+}
+
+.about h2, p {
+    display: flex;
+    /* color: #000000; */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 14%;
+    margin-right: 14%;
+    z-index: 1;
+}
+
+/* projects section */
+/*  */
+/*  */
+
+.projects {
+    /* background-color: black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 10vh 0;
+    
+
+}
+
+.projects h2, p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.projects p {
+    z-index: 1;
+    font-size: 1.2rem;
+    /* color: white; */
+    margin-left: 14%;
+    margin-right: 14%;
+    margin-bottom: 0;
+}
+
+.projects h2 {
+    font-weight: 900;
+    font-size: 2.2rem;
+    /* color: white; */
+}
+
+.projects .skills {
+    margin-top: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.projects ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10%;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    list-style: square;
+    font-size: 1.5rem;  
+    z-index: -1;
+}
+
+
+
+.projects p {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+/* projects images  */
+
+.img-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    min-height: 20rem; 
+    text-align: center;
+    margin-bottom: 2rem;
+   padding: 2rem;
+    /* border-radius: 15px; */
+    position: relative;
+    z-index: 0;
+}
+
+
+#img {
+    text-align: center;
+    border-radius: 15px;
+    width: 50%;
+    height: auto;
+    min-height: 10rem;
+    min-width: 30rem;
+    max-width: 50rem; 
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex: 2;
+    margin: 0.4rem 2rem;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    z-index: 1;
+    
+}
+
+#img h5 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-align: center;
+    width: auto;
+    display: inline-block;
+    margin: 1rem 1rem 0 1rem;
+    vertical-align: top;
+    text-align: center; 
+    justify-content: center;
+    align-items: center;
+    color: black;
+    /* background-color: #A149FA; */
+    height: 2.3rem;
+    width: auto;
+    border-radius: 25px;
+    padding: 0;
+}
+
+#img h5:hover {
+    opacity: 80%;
+}
+
+#img h5 a {
+    text-decoration: underline;
+}
+
+
+/* change this back to hover */
+/*  */
+
+#img a {
+    display: flex;
+    justify-content: center;
+}
+
+#img a:hover {
+    opacity: 60%;
+    border-radius: 15px;
+    width: 99%;
+}
+
+/*  */
+
+
+.img-1 {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-wrap: wrap;  
+    border: 2px solid black; 
+    /* filter: drop-shadow(-20px 10px 0px #A149FA); */
+}
+
+
+.img-2 {
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;  
+    border: 2px solid black;
+    /* filter: drop-shadow(-20px 10px 0px #A149FA); */
+}
+
+.img-3 {
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid black;
+    /* filter: drop-shadow(-20px 10px 0px #A149FA); */
+}
+
+.skills {
+    margin: 0;
+    /* padding-top: 2rem; */
+}
+
+#skills h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 900;
+}
+
+#skills p {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+#skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.8rem;
+    margin: 3rem;
+}
+
+.skill-list li {
+    z-index: -1;
+}
+
+/* boxes */
+
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: 2rem;
+    z-index: -1;
+    background-color: #E6E6FA;
+    padding: 2rem 0;
+}
+
+.boxes .box {
+    text-align: center;
+ background-color: white;
+ border: 2px solid black;
+ width: 30rem;
+ height: auto;
+ min-height: 12rem;
+ min-width: 23rem;
+ max-width: 35rem;
+ border-radius: 15px;
+ /* flex: 1; */
+ flex-basis: 0;
+ margin: 3rem;
+ display: flex;
+ flex-direction: column;
+ flex-wrap: wrap;
+ /* filter: drop-shadow(-10px 6px 0px #A149FA);
+ z-index: 2; */
+ 
+}
+
+.box h3 {
+    font-size: 1.5rem;
+    padding: 0; margin: 0;
+    padding-top: 1rem;
+    font-weight: 900;
+}
+
+.box p {
+    margin: 1rem 1.5rem;
+    word-wrap: break-word;
+    display: flex;
+    flex-wrap: wrap;
+    color: black;
+    z-index: 1;
+    font-size: 1.2rem;
+}
+
+/* contact section */
+/*  */
+/*  */
+
+
+
+.contact {
+    background-color: white;
+    height: auto;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    line-height: 1rem;
+    justify-content: center;
+    align-items: center;
+    /* top: 5rem; */
+    z-index: -10;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.contact p {
+    margin: 0 1.5rem;
+    font-size: 1.2rem;
+}
+
+.contact h2, p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact h2 {
+    font-weight: 900;
+    font-size: 2.2rem;
+}
+
+.contact a {
+    text-align: center;
+    font-size: 1.3rem;
+    color: black;
+    margin-top: 1.5rem;
+}
+
+.contact .email {
+    color: white; 
+    background-color: #A149FA;
+    height: 1.2rem;
+    padding: 1rem;
+    width: 7.5rem;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: 0ms;
+}
+
+#contact .email:hover {
+    transition:0ms;
+    opacity: 80%;
+}
+
+
+
+.socials {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    color: black; 
+}
+
+.socials a {
+    color: black; 
+}
+
+/* footer section */
+/*  */
+/*  */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto; 
+    background-color: black; 
+}
+
+
+footer h6 {
+    padding: 0;
+    opacity: 60%;
+    width: auto;
+ font-weight: 100;
+ font-size: 0.9rem;
+ color:#EAEAEA;
+ display: flex;
+ justify-content: center;
+ text-align: center;
+ align-items: center;
+ align-content: center;
+}
+
+
+footer a {
+    display: flex;
+    justify-content: flex-start;
+}
+
+footer a:hover {
+    opacity: 100%;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    margin: 1.2rem;
+    width: 100%;
+    align-items: flex-start;   
+}
+
+
+footer .footer-link {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+    color: white;
+    opacity: 60%;
+    font-size: 0.8rem;
+    font-weight: 100;
+    text-decoration: none;
+    padding: 0;
+    width: auto;
+}
+
+#footer-cont {
+    margin: 1rem;
+    margin-left: 10%;
+    padding: 0;
+}
+
+/* text */
+/*  */
+/*  */
+
+h2 {
+    
+}
+
+
+
+/* animations */
+/*  */
+/*  */
+
+/* #about p {
+    opacity: 0;
+} */
+
+p {
+    opacity: 0;
+    position: relative;
+    bottom: -120px;
+    /* z-index: -1; */
+    transition: all 0.8s ease-out;
+}
+
+
+h1, h4 {
+    opacity: 0;
+    position: relative;
+    bottom: -40px;
+    transition: all 0.9s ease-out;
+}
+
+.show {
+    opacity: 1;
+    bottom: 0;
+}
+
+
+/* screen sizes */
+/*  */
+/*  */
+
+@media only screen and (max-width:1024px) {
+    .contact p {
+       font-size: 1rem;
+    }
+
+    /* #img{
+        width: 20rem;
+        height: auto;
+        margin: 0;
+        
+    } */
+
+}
+    
+
+@media only screen and (max-width:768px) {
+    
+
+    .projects ul {
+        display: flex;
+        gap: 15%;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        list-style: square;
+        font-size: 1.5rem; 
+        margin: 0 10%; 
+    }
+
+    .container-1 {
+        /* background-color: yellow; */
+        height: 80vh;
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        line-height: 0.5rem;
+        justify-content: center;
+        align-items: center;
+        top: 5rem;
+        z-index: -10;
+    }
+
+    .intro-text {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        margin: 0;
+    }
+
+    .container-1 h1 {
+        font-size: 2.5rem;
+    }
+
+    .container-1 p {
+        font-size: 1rem;
+    }
+
+    .container-1 .img {
+        width: 18rem;
+        height: 18rem;   
+    }
+
+    .img-container {
+        
+        gap: 0.1rem;
+        
+    }
+
+    #img {
+        margin: 0.8rem auto 0.8rem auto;
+        max-width: 40%;
+        
+    }
+
+
+    #skills-list {
+        
+        margin: 1.5rem;
+    }
+    
+}
+
+/* mobile screen */
+
+@media only screen and (max-width:480px) {
+    .projects ul {
+        display: flex;
+        gap: 15%;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        list-style: square;
+        font-size: 1.2rem; 
+        margin: 0 10%; 
+    }
+
+    .container-1 {
+        /* background-color: yellow; */
+        height: 80vh;
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        line-height: 0rem;
+        justify-content: center;
+        align-items: center;
+        top: 5rem;
+        z-index: -10;
+    }
+
+    .container-1 h1 {
+        font-size: 2.2rem;
+        font-weight: 900;
+        margin-left: 14%;
+        margin-right: 14%;
+        text-align: center;
+        line-height: 1.7rem;
+    }
+
+    .container-1 h4 {
+        font-size: 0.9rem;
+        font-weight: 400;
+        margin-left: 18%;
+        margin-right: 18%;
+        line-height: 1rem;
+        text-align: center;
+        margin-top: -0.8rem;
+    }
+
+    .container-1 .img {
+        width: 65vw;
+        height: 65vw;
+        
+        
+    }
+
+    nav a {
+        font-size: 2rem;
+        text-decoration: none;
+    }
+
+    .about {
+        margin-top: 7rem;
+    }
+
+    .img-container {
+        
+    }
+
+    #img{
+
+        min-width: 15rem;
+        
+    }
+
+    #img a:hover {
+        background-color: transparent;
+    }
+
+    #img h5 {
+        
+        font-size: 1.2rem;
+        text-align: center;
+        width: auto;
+        display: inline-block;
+        margin: 0 1rem 0 1rem;
+        vertical-align: top;
+        text-align: center; 
+        justify-content: center;
+        align-items: center;
+
+        height: 2rem;
+        width: auto;
+        border-radius: 25px;
+    }
+
+    
+
+    .projects .skills {
+        margin-top: 5rem;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .projects ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10%;
+        justify-content: center;
+        justify-items: center;
+        align-content: center;
+        align-items: center;
+        list-style: none;
+        font-size: 1.1rem; 
+        text-align: center;
+        margin-left: 14%;
+        margin-right: 29%;
+        
+
+        
+    }
+
+    #skills-list {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 1rem;
+        margin: 1rem;
+    }
+
+    .boxes {
+        margin-bottom: 0;
+    }
+    
+    .boxes .box {
+     margin: 1.5rem;
+     min-width: 15rem;
+     
+    }
+
+    .contact {
+        padding: 0;
+    }
+
+    .contact p {
+        font-size: 1rem;
+     }
+
+    .contact .email {
+        color: white; 
+
+        height: 1rem;
+        padding: 0.9rem;
+        width: 8rem;
+        border-radius: 25px;
+    }
+
+    footer h6 {
+ 
+        font-weight: 100;
+        font-size: 0.5rem;
+        margin: 0;
+       }
+
+       footer {
+
+        width: 100%;
+        height: auto; 
+        background-color: black; 
+    }
+
+    footer .footer-link {
+       
+        font-size: 0.6rem;
+        font-weight: 100;
+        
+    }
+
+    #footer-cont {
+        margin: 0.5rem;
+    margin-left: 10%;
+    }
+
+    .about p {
+        font-size: 1rem;
+        margin: 0 2rem;
+    }
+
+    .projects p {
+        font-size: 1rem;
+        margin: 0 2rem;
+    }
+
+    .boxes p {
+        font-size: 1rem;
+        margin: 1 2rem;
+    }
+
+    
+
+       
+}
